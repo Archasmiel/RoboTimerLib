@@ -80,6 +80,35 @@ void loop() {
 }
 ```
 
+### Example: Anonymous functions
+```cpp
+#include <RoboTimer.h>
+
+RoboTimer timer;
+
+void setup() {
+    pinMode(LED_BUILTIN, OUTPUT);
+
+    // Add an anonymous function to blink the LED
+    timer.addAction([]() {
+        digitalWrite(LED_BUILTIN, HIGH);   // Turn the LED on
+    })
+    .addDelay(500)
+    .addAction([]() {
+        digitalWrite(LED_BUILTIN, LOW);    // Turn the LED off
+    });
+    .addDelay(500);
+
+    // Start the timer
+    timer.start();
+}
+
+void loop() {
+    // Update the timer to execute actions and delays
+    timer.update();
+}
+```
+
 ## API Reference
 
 ### Class: `RoboTimer`
