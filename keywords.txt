@@ -1,0 +1,11 @@
+RoboTimer    KEYWORD1
+ActionBase   KEYWORD1
+Action       KEYWORD1
+Delay        KEYWORD1
+
+start        KEYWORD2
+stop         KEYWORD2
+update       KEYWORD2
+addAction    KEYWORD2
+addDelay     KEYWORD2
+setActionDelay KEYWORD2
