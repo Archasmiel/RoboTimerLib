@@ -102,7 +102,7 @@ void setup() {
     .addDelay(500)
     .addAction([]() {
         digitalWrite(LED_BUILTIN, LOW);    // Turn the LED off
-    });
+    })
     .addDelay(500);
 
     // Start the timer
